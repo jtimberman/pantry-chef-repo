@@ -22,9 +22,13 @@ default_source :community
 # supermarket. See the POLICYFILE_README.md for more information.
 
 run_list(
-  'pantry'
+  'pantry',
+  'housepub-win8-services',
+  'housepub-hyperv'
 )
 
+cookbook 'housepub-win8-services', git: 'https://github.com/jtimberman/housepub-win8-services-cookbook'
+cookbook 'housepub-hyperv', git: 'https://github.com/jtimberman/housepub-hyperv-cookbook'
 ############
 # Attributes
 # Feel free to modify these values, or add your own attributes for
@@ -37,4 +41,18 @@ default['homebrew']['casks']      = %w()
 default['homebrew']['formula']    = %w()
 default['homebrew']['taps']       = %w()
 # packages for Windows
-default['chocolatey']['packages'] = %w()
+default['chocolatey']['packages'] = %w(
+  google-chrome-x64
+  emacs
+  visualstudiocode
+  conemu
+  putty
+  atom
+  git
+  minecraft 
+  leagueoflegends
+  battle.net
+  mumble
+  teamspeak
+  steam
+)
