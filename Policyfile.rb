@@ -49,10 +49,15 @@ default['chocolatey']['packages'] = %w(
   putty
   atom
   git
-  minecraft 
+  minecraft
   leagueoflegends
   battle.net
   mumble
   teamspeak
   steam
+  iTunes
+  dropbox
+  sysinternals
+  irfanview
+  you-need-a-budget
 )
