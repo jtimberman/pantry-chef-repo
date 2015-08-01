@@ -60,4 +60,5 @@ default['chocolatey']['packages'] = %w(
   sysinternals
   irfanview
   you-need-a-budget
+  1password
 )
